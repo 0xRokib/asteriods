@@ -21,8 +21,7 @@ def main():
     AsteroidField.containers = updateable
     asteroid_field = AsteroidField()
     Player.containers = (updateable, drawable)
-    
-    
+
     player = Player(SCREEN_WIDTH/2, SCREEN_HEIGHT/2)
     dt = 0
     while True:
@@ -46,7 +45,6 @@ def main():
             obj.draw(screen)
         pygame.display.flip()
         dt = clock.tick(60) / 1000
-    
     
     
 
